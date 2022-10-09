@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--      ....font awesome.....-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>it company website</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/two.css' %}" />
+</head>
+
+<body>
+
+    <div class="main" style="background-image: url(/static/images/pic5.jpg);width:100vw;height:100vh;
+background-position: bottom;
+background-size: cover;
+background-repeat: no-repeat;">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container-fluid">
+                <img src="{% static 'images/logo2.jpg' %}" style="width: 7vw;border-radius: 20px;
+      margin-right:1rem">
+                <a class="navbar-brand" href="{% url 'index' %}">Designistic</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{% url 'index' %}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'about' %}">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'services' %}">services</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'gallery' %}">gallery</a>
+                        </li>
+
+                    </ul>
+
+
+                </div>
+            </div>
+        </nav>
+        <div class="container text-center text-white " style="padding-top:270px; box-sizing:border-box">
+            <h3 class="colo">welcome to designistic</h3>
+            <h1 style="font-weight:bold">its always ready to help you</h1>
+
+        </div>
+    </div>
+
+    <!--  .....section1 starts here......-->
+
+    <section class="container ourservices text-center">
+        <h1>SERVICES</h1>
+        <p>this is our services</p>
+
+        <div class="row rowsetting">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+                <div class=" imgsetting d-block m-auto">
+                    <i class=" fa fa-shopping-cart fa-3x"></i>
+                </div>
+                <h2>E-commerse</h2>
+                <p>Here you can get a very nice E-commerse website</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+                <div class="d-block m-auto">
+                    <i class=" fa fa-shopping-cart fa-3x"></i>
+                </div>
+                <h2>E-commerse</h2>
+                <p>Here you can get a very nice E-commerse website</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+                <div class="d-block m-auto">
+                    <i class=" fa fa-shopping-cart fa-3x"></i>
+                </div>
+                <h2>E-commerse</h2>
+                <p>Here you can get a very nice E-commerse website</p>
+            </div>
+
+        </div>
+
+    </section>
+
+<!--.......main starts here.......-->
+  <main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Example headline.</h1>
+            <p>Some representative placeholder content for the first slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+        <h2 class="fw-normal">Heading</h2>
+        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+        <h2 class="fw-normal">Heading</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+        <h2 class="fw-normal">Heading</h2>
+        <p>And lastly this, the third column of representative placeholder content.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+
+      </div>
+  </main>
+
+
+<!--  .......here section start...........-->
+
+  <section id="events" class="section-padding lightBGColor">
+
+        <div class="container">
+            <div class="row justify-content-md-center">
+
+                <div class="col-xl-12 text-center">
+                  <a href="https://www.ducatindia.com/contact-us" target="_blank"><img src="https://www.ducatindia.com/image/website-slider.jpg" alt="ducat india" style="width:100%"></a>
+                   <div class="alert"></div>
+                   </div>
+
+                   </div>
+            <div class="row justify-content-md-center">
+
+                <div class="col-xl-8 text-center">
+
+                    <div class="headingStyle">
+
+                        <h2>Events at Ducat</h2>
+                        <div class="sep"><img src="/static/line.png" alt="Icon"></div>
+                        <p>Ducat provides the best available programs which helps in enhancing the technical skills which seems to be beneficial for all the applicants.</p>
+
+                    </div>
+
+                </div> <!-- End of COL XL 8 -->
+
+            </div> <!-- End of ROW -->
+
+            <div class="row">
+
+                <div class="col-xl-4 col-md-4">
+
+                    <img src="/static/images/it2.jpg" alt="Event" class="img-fluid">
+
+                    <div class="boxStyle">
+
+                        <h3>Workshop at Colleges</h3>
+                        <p>These face-to-face workshops bring student the latest developments, tools and resources.</p>
+                        <a href="https://www.ducatindia.com/workshop-at-colleges" class="smallbutton">Read More</a>
+
+                    </div>
+
+                </div> <!-- End of COL XL 4 -->
+
+                <div class="col-xl-4 col-md-4">
+
+                    <img src="/static/images/it2.jpg" alt="Event" class="img-fluid">
+
+                    <div class="boxStyle">
+
+                        <h3>Our Placement Cell</h3>
+                        <p>Ducat is a very big training institute which has multiple training centers all around India.</p>
+                        <a href="https://www.ducatindia.com/our-placement-cell" class="smallbutton">Read More</a>
+
+                    </div>
+
+                </div> <!-- End of COL XL 4 -->
+
+                <div class="col-xl-4 col-md-4">
+
+                    <img src="/static/images/it2.jpg" alt="Event" class="img-fluid">
+
+                    <div class="boxStyle">
+
+                        <h3>Workshop at Ducat</h3>
+                        <p>Ducat brings you the latest development technology, tools and resources to help you to achive your Goal!</p>
+                        <a href="https://www.ducatindia.com/workshop-at-ducat" class="smallbutton">Read More</a>
+
+                    </div>
+
+                </div> <!-- End of COL XL 4 -->
+
+            </div> <!-- End of ROW -->
+
+        </div> <!-- End of Container -->
+
+    </section>
+
+<!--  .........here footer start...........-->
+
+  <footer class="footerdez footerdex dark-footer pt50 pb80">
+     <div class="container">
+        <div class="row justify-content-between">
+           <div class="col-lg-4 col-sm-12 pt40">
+              <div class="footerdez-a">
+                 <h2>We would love to hear from you.</h2>
+                 <p class="mt10">Feel free to reach out if you want to collaborate with us, or simply have a call.</p>
+                 <div class="contactinfo mt30">
+                    <a href="mailto:info@designisticglobal.com">info@designisticglobal.com</a>
+                    <a href="tel:+91 92061 92261">+91 92061 92261</a>
+                 </div>
+              </div>
+           </div>
+
+           <div class="col-lg-7 col-sm-12">
+              <div class="row fttlnks">
+                 <div class="col-lg-4 col-sm-6 pt40">
+                    <h5>OUR ADDRESS</h5>
+                    <h4>Designistic Global Pvt Ltd.</h4>
+                    <p>Sarafa Bazar, Apra</p>
+
+                 </div>
+                 <div class="col-lg-4 col-sm-6 pt40">
+                    <h5>SERVICES</h5>
+                    <ul class="footer-address-list link-hover">
+						<li><a href="website-designing">Website Designing</a> </li>
+						<li><a href="graphics-designing">Graphics Designing</a> </li>
+						<li><a href="ecommerce-solutions">E-Commerce Solution</a> </li>
+						<li><a href="mobile-app-development">Mobile App Development</a> </li>
+						<li><a href="digital-marketing">Digital Marketing</a> </li>
+                    </ul>
+                 </div>
+                 <div class="col-lg-4 col-sm-6 pt40">
+                    <h5>QUICK LINKS</h5>
+                    <ul class="footer-address-list link-hover">
+                       <li><a href="./">Home</a></li>
+                       <li><a href="about">About Us</a></li>
+                       <li><a href="newsletter">Newsletter</a></li>
+                       <li><a href="achievements">Achievements</a></li>
+                       <li><a href="e-books">E-Books</a></li>
+                       <li><a href="career">Career</a></li>
+                       <li><a href="contact-us">Contact Us</a></li>
+                    </ul>
+                 </div>
+              </div>
+              <div class="row fttlnks flexend">
+                 <div class="col-lg-4 col-sm-6 pt60">
+                    <h5>Follow Us</h5>
+                    <div class="ff-social-icons mt30">
+                       <a href="javascript:void(0)" target="blank"><i class="fab fa-facebook"></i></a>
+                       <a href="javascript:void(0)" target="blank"><i class="fab fa-twitter"></i></a>
+                       <a href="javascript:void(0)" target="blank"><i class="fab fa-linkedin"></i></a>
+                       <a href="javascript:void(0)" target="blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                 </div>
+                 <div class="col-lg-6 pt60">
+                    <div class="footer-copyrights-">
+                       <p>Copyright © 2021-2022 Designistic Global Pvt. Ltd.</p>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+  </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>

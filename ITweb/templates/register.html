@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+      .main{
+      background: url(/static/images/itdark.jpg);
+width:100vw;
+height:120vh;
+background-position: bottom;
+background-size: cover;
+background-repeat: no-repeat;
+      }
+      .des{ display:inline-block}
+      .icon{color:rgb(156, 5, 153)}
+      .heading{color:white}
+      span{color:rgb(156, 5, 153)}
+      .join{background:rgb(156, 5, 153)!important}
+<!--      .top{-->
+<!--      margin-top:-3rem-->
+<!--      }-->
+    </style>
+  </head>
+  <body>
+  <div class="main">
+    <div class="container-fluid">
+      <img src="{% static 'images/dimg.png' %}" class="des m-4"style="width: 8vw;border-radius: 20px;">
+      <h3 class="des icon">Designistic</h3>
+    </div>
+<!--..........................body........................-->
+    <div class="container col-xl-10 col-xxl-8 px-4">
+    <div class="row align-items-center g-lg-5 ">
+      <div class="col-lg-7 text-center text-lg-start ">
+        <h1 class="display-4 fw-bold lh-1 mb-3 heading">Web Design &<br><span>Development</span><br>Company</h1>
+        <p class="col-lg-10 fs-4 text-white">Designistic is the best company for Web Designing and development.Lets Work together.</p>
+        <button type="button" class="btn join btn-lg mb-1"><a class="nav-link" href="#">JOIN US</a></button>
+      </div>
+      <div class="col-md-10 mx-auto col-lg-5">
+        <form method="POST" class="p-2 p-md-5 border rounded-3 bg-dark">
+          {% csrf_token %}
+          <h2 class="text-center rounded-5 icon">Register now</h2>
+           <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floating" placeholder="Username" name="uname">
+            <label for="floating">Username</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="eml">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="pwd">
+            <label for="floatingPassword">Password</label>
+            <p style="color:red;text-align:center">{{error_name}}</p>
+          </div>
+          <button class="w-100 btn btn-lg btn-primary join" type="submit">Register</button>
+          <<p class="text-white">If already register__<span><a href="{% url 'login' %}" class="text-primary">Login</a></span></p>
+          <hr class="my-2">
+          <small class="text-muted">Register first to open Designistic Home page.</small>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
